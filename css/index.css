@@ -183,6 +183,27 @@ nav {
     letter-spacing: 1.5px;
 }
 
+/* typewriter */
+
+#typeText {
+   text-align: center;
+}
+
+#typeText::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .hero-cta {
     display: flex;
     justify-content: center;
@@ -193,8 +214,7 @@ nav {
     display: inline-block;
     text-decoration: none;
     color: #14e956;
-    border: 1px solid white;
-    padding: 8px;
+    padding: 10px 20px;
     box-shadow: 1px 1px 10px #14e956;
     border-radius: 4px;
     margin: 10px;
@@ -216,7 +236,6 @@ nav {
 
 .about-text {
     width: 50%;
-    border: 1px solid white;
     border-radius: 10px;
     box-shadow: 1px 1px 20px #14e956;
     padding: 10px;
@@ -262,9 +281,9 @@ nav {
 
 .skill-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: center;
-    gap: 70px 70px;
+    gap: 60px 60px;
     text-align: center;
     background-color: black;
     box-shadow: 1px 1px 10px #14e956;
@@ -277,9 +296,10 @@ nav {
 .skill-grid img {
     max-width: 80px;
     max-height: 80px;
-    border-radius: 50%;
-    background-color: white;
+    border-radius: 20%;
+    background-color: #FEFAF6;
     padding: 10px;
+    object-fit:fill;
 }
 
 .skill-grid-item img:hover {
@@ -292,7 +312,7 @@ nav {
 #experience h1 {
     text-align: center;
     font-size: 4em;
-    margin: 170px 60px 130px 70px;
+    margin:  170px auto;
 }
 
 
@@ -319,32 +339,43 @@ nav {
     flex-direction: column;
     padding-top: 40px;
     min-width: fit-content;
+    gap: 10px;
 }
 
-#company-name-flex a {
+.company-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     border-left-style: solid;
     border-left-color: #0F0F0F;
-    padding: 10px 20px;
-    margin: 4px 8px;
+    padding:10px;
+    /* margin: 4px 8px; */
     text-decoration: none;
     color: white;
     font-weight: 300;
-    line-height: 1.7em;
+    font-size: 1.1rem;
+    /* line-height: 1.7em; */
     letter-spacing: 0.9px;
 }
 
-#company-name-flex a:first-child {
+.company-item:first-child {
     color: #14e956;
     border-left-style: solid;
     border-left-color: #14e956;
 }
 
-#company-name-flex a:hover {
+
+.company-item:hover {
     color: #14e956;
     border-left-style: solid;
     border-left-color: #14e956;
     background-color: #0F0F0F;
     cursor: pointer;
+}
+
+.company-item img {
+    width: 30px;
+    height: 30px;
 }
 
 .company-role {
@@ -420,6 +451,7 @@ nav {
 .slide-content p {
     font-weight: 300;
     font-size: 1.1em;
+    font-style: italic;
 }
 
 .slide-content a {
@@ -429,16 +461,14 @@ nav {
 
 /* Contact */
 
-.contact-form {
+.contact-form-flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    border: 1px solid white;
     width: 50%;
     margin: 0 auto;
-    height: 500px;
-    border: 1px solid white;
+    /* height: 500px; */
     border-radius: 10px;
     box-shadow: 1px 1px 20px #14e956;
     padding: 10px;
@@ -466,7 +496,7 @@ input[type='email'] {
 
 input[type='submit'] {
     color: #14e956;
-    border: 1px solid white;
+    border: 0;
     padding: 10px 50px;
     box-shadow: 1px 1px 10px #14e956;
     border-radius: 4px;
@@ -542,31 +572,6 @@ footer p {
     margin: 0 12px 0 0;
 }
 
-/* typewriter */
-
-#elementEl {
-    margin-left: 5px;
-}
-
-#elementEl::after {
-    content: '|';
-    /* margin-left: 5px; */
-    animation: blink 0.7s infinite;
-}
-
-
-/* #hero-type::after {
-    content: '|';
-    margin-left: 5px;
-    animation: blink 0.7s infinite;
-} */
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+.submit-feedback {
+    display: none;
 }

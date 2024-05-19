@@ -23,6 +23,11 @@
             <div class="logo">
                 <img src="images/logo-3.png" alt="">
             </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -31,11 +36,6 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
     </header>
     <div id="particles-js">
@@ -44,20 +44,11 @@
     <main>
         <div class="hero-section">
             <div class="hero-text">
-                <h1 id="elementEl">
-                    Hello, I'm Kiren Jolly !
-                    Full Stack Developer
-                </h1>
-                <!-- <p id="hero-type">
-                    Hello, I'm Kiren Jolly !
-                </p>
-                <p id="hero-type">
-                    Full Stack Developer
-                </p> -->
+                <h1 id="typeText"></h1>
             </div>
             <div class="hero-cta">
-                <a href="index.html">View Resume</a>
-                <a href="index.html">Contact Me</a>
+                <a href="#experience">View Resume</a>
+                <a href="#contact">Contact Me</a>
             </div>
         </div>
         <section id="about">
@@ -98,12 +89,8 @@
             <h1>Skills</h1>
             <div class="skill-grid">
                 <div class="skill-grid-item">
-                    <img src="images/c-.png" alt="">
-                    <p>C++</p>
-                </div>
-                <div class="skill-grid-item">
-                    <img src="images/docker.png" alt="">
-                    <p>Docker</p>
+                    <img src="images/icons8-kotlin-480.png" alt="">
+                    <p>Kotlin</p>
                 </div>
                 <div class="skill-grid-item">
                     <img src="images/java (1).png" alt="">
@@ -112,22 +99,58 @@
                 <div class="skill-grid-item">
                     <img src="images/python.png" alt="">
                     <p>Python</p>
-                </div>
-                <div class="skill-grid-item">
-                    <img src="images/postgre.png" alt="">
-                    <p>Postgres</p>
                 </div>
                 <div class="skill-grid-item">
                     <img src="images/js.png" alt="">
                     <p>Javascript</p>
                 </div>
                 <div class="skill-grid-item">
-                    <img src="images/java (1).png" alt="">
-                    <p>Java</p>
+                    <img src="images/c-.png" alt="">
+                    <p>C++</p>
                 </div>
                 <div class="skill-grid-item">
-                    <img src="images/python.png" alt="">
-                    <p>Python</p>
+                    <img src="images/icons8-spring-boot-480.png" alt="">
+                    <p>Spring Boot</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/docker.png" alt="">
+                    <p>Docker</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/postgre.png" alt="">
+                    <p>Postgres</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/Apache Cassandra.png" alt="">
+                    <p>Cassandra</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/mongodb-original.svg" alt="">
+                    <p>Mongo DB</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/kubernetes.svg" alt="">
+                    <p>kubernetes</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/aws.png" alt="">
+                    <p>AWS</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/google-cloud-platform.512x455.png" alt="">
+                    <p>GCP</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/file-type-git.svg" alt="">
+                    <p>Github</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/grafana.svg" alt="">
+                    <p>Grafana</p>
+                </div>
+                <div class="skill-grid-item">
+                    <img src="images/adobe-xd.png" alt="">
+                    <p>Adobe XD</p>
                 </div>
             </div>
         </section>
@@ -135,8 +158,14 @@
             <h1>Experience</h1>
             <div class="company-flex">
                 <div id="company-name-flex">
-                    <a>Target Corporation</a>
-                    <a>Wipro Limited</a>
+                    <div class="company-item">
+                        <img src="images/Target_Bullseye-Logo_Red_transparent.png" alt="">
+                        <a>Target Corporation</a>
+                    </div>
+                    <div class="company-item">
+                        <img src="images/Wipro_Primary_Logo_Color_RGB.svg" alt="">
+                        <a>Wipro Limited</a>
+                    </div>
                 </div>
                 <div class="company-details-flex">
                     <div id="target-exp">
@@ -288,8 +317,8 @@
         </section>
         <section id="contact">
             <h1>Contact</h1>
-            <form action="">
-                <div class="contact-form">
+            <form id="contact-form">
+                <div class="contact-form-flex">
                     <div class="social-media">
                         <a href="https://github.com/kjolly2093/kjolly2093.github.io" target=“_blank”><i
                                 class="fab fa-github fa-2x"></i></a>
@@ -316,6 +345,9 @@
                     <div>
                         <input type="submit" value="Submit">
                     </div>
+                    <div class="submit-feedback">
+                        <p>Thanks you for reaching out to me! Cheers .</p>
+                    </div>
                 </div>
             </form>
             </div>
@@ -331,12 +363,12 @@
             <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
         </div>
     </footer>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="js/slideshow.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://kit.fontawesome.com/cc4aa76a9b.js" crossorigin="anonymous"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/animate.js"></script>
 </body>
 
 </html>

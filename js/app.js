@@ -1,53 +1,37 @@
+'use strict';
+
 // Splash timeout
 const splash = document.querySelector('.splash-section');
 
+const HtmlBody = document.querySelector("body");
+
 document.addEventListener("DOMContentLoaded", (e) => {
-    body.classList.toggle("overlay");
+    HtmlBody.classList.toggle("overlay");
     setTimeout(() => {
         splash.classList.add('display-none');
-        body.classList.remove("overlay");
+        HtmlBody.classList.remove("overlay");
+        type(0, 0);
     }, 2000)
 })
 
-'use strict';
 
-// const heroParas = document.querySelectorAll('#hero-type');
+// typewriter
+const texts = ["Hello, I'm Kiren Jolly !", "Full Stack Developer."];
+const typeWriterText = document.querySelector('#typeText');
 
-// // typewrite effect
-// function typeWriter(el) {
-//     for (const heroPara of heroParas) {
-//         const textArray = heroPara.innerHTML.split('');
-//         heroPara.innerHTML = '';
-//         textArray.forEach((letter, k) =>
-//             setTimeout(() => (heroPara.innerHTML += letter), 95 * k)
-//         );
-//     }
-//     // setInterval(() => typeWriter(el), 8000);
-// }
-
-// typeWriter(heroParas);
-
-const elementEl = document.querySelector('#elementEl');
-
-// typewrite effect
-function typeWriter(el) {
-    const textArray = el.innerHTML.split('');
-    el.innerHTML = '';
-    textArray.forEach((letter, i) => {
-        if (letter == "!") { 
-            el.innerHTML += "<br>";
+function type(word, letter) {
+    typeWriterText.innerHTML += texts[word][letter];
+    letter = (letter + 1) % texts[word].length
+    if (letter == 0) {
+        word++;
+        if (word < texts.length) {
+            typeWriterText.innerHTML += "<br>";
         }
-        else {
-            // el.innerHTML += letter 
-            setTimeout(() => (el.innerHTML += letter), 95 * i);
-        }
-        // setTimeout(() => (el.innerHTML += letter), 95 * i);
     }
-    );
-    // setInterval(() => typeWriter(el), 8000);
+    if (word < texts.length) {
+        setTimeout(type, 100, word, letter);
+    }
 }
-
-typeWriter(elementEl);
 
 
 // Particles config
@@ -71,21 +55,28 @@ particlesJS.load('particles-js-projects', 'assets/particlesjs-nasa.json', functi
 
 
 // Experience color
-var links = document.querySelectorAll('#company-name-flex a');
+var links = document.querySelectorAll('.company-item');
 
 function changeColor(e) {
+    let innerHTML
     for (var i = 0; i < links.length; i++) {
-        if (e.target.innerHTML != links[i].innerHTML) {
+        if (e.target.classList.contains('company-item')) {
+            innerHTML = e.target.children[1].innerHTML;
+        }
+        else {
+            innerHTML = e.target.parentElement.children[1].innerHTML;
+        }
+        if (innerHTML != links[i].children[1].innerHTML) {
             links[i].style.color = 'white';
             links[i].style.borderLeftColor = '#0F0F0F';
         }
         else {
-            e.target.style.color = '#14e956';
-            e.target.style.borderLeftColor = '#14e956';
+            links[i].style.color = '#14e956';
+            links[i].style.borderLeftColor = '#14e956';
         }
     }
 
-    if (e.target.innerHTML == 'Target Corporation') {
+    if (innerHTML == 'Target Corporation') {
         $("#wipro-exp").hide();
         $("#target-exp").show();
     }
@@ -129,3 +120,14 @@ document.onclick = function (e) {
         closeMenu();
     }
 }
+
+//Contact form
+$("#contact-form").on("submit", function (event) {
+    event.preventDefault();
+    let name = event.target.elements.item(0).value;
+    let email = event.target.elements.item(1).value;
+    let message = event.target.elements.item(2).value
+    console.log(message);
+    $(".submit-feedback").css("display", "block");
+    $("#contact-form").trigger("reset");
+});
