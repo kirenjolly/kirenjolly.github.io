@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="css/devices.min.css" type="text/css">
     <link rel="stylesheet" href="css/slideshow.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/mobile.css">
     <title>Kiren Portfolio</title>
 </head>
@@ -222,97 +224,170 @@
                 </a>
 
                 <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <div class="slide-container">
-                        <div class="stack" id="resume-stack">
-                            <div class="card">
-                                <img src="images/resume-b.png" alt="" id="card1">
-                            </div>
-                            <div class="card">
-                                <img src="images/resume-2.png" alt="" id="card2">
-                            </div>
-                            <div class="card">
-                                <img src="images/resume-3.png" alt="" id="card3">
-                            </div>
-                            <div class="card">
-                                <img src="images/resume-4.png" alt="" id="card4">
-                            </div>
-                            <div class="card">
-                                <img src="images/resume-5.png" alt="" id="card5">
+                <div class="slides-dot-container">
+                    <div>
+                        <div class="mySlides fade">
+                            <div class="slide-container">
+                                <div class="stack" id="resume-stack">
+                                    <div class="card">
+                                        <img src="images/resume-b.png" alt="" id="card1">
+                                    </div>
+                                    <div class="card">
+                                        <img src="images/resume-2.png" alt="" id="card2">
+                                    </div>
+                                    <div class="card">
+                                        <img src="images/resume-3.png" alt="" id="card3">
+                                    </div>
+                                    <div class="card">
+                                        <img src="images/resume-4.png" alt="" id="card4">
+                                    </div>
+                                    <div class="card">
+                                        <img src="images/resume-5.png" alt="" id="card5">
+                                    </div>
+                                </div>
+                                <div class="slide-content">
+                                    <h4>Resume Builder</h4>
+                                    <p>Created the frontend for a website that allows users to create resumes, which
+                                        also gives
+                                        tips
+                                        and
+                                        steps to create one</p>
+                                    <a href="https://github.com/kjolly2093/kjolly2093.github.io" target=“_blank”><i
+                                            class="fab fa-github fa-2x"></i></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="slide-content">
-                            <h4>Resume Builder</h4>
-                            <p>Created the frontend for a website that allows users to create resumes, which also gives
-                                tips
-                                and
-                                steps to create one</p>
-                            <a href="https://github.com/kjolly2093/kjolly2093.github.io" target=“_blank”><i
-                                    class="fab fa-github fa-2x"></i></a>
+
+                        <div class="mySlides fade">
+                            <div class="slide-container">
+                                <div class="stack" id="cafe-stack">
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-1.png" alt="" id="resume-stack-card1">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-2.png" alt="" id="resume-stack-card2">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-3.png" alt="" id="resume-stack-card3">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-4.png" alt="" id="resume-stack-card4">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-5.png" alt="" id="resume-stack-card5">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-6.png" alt="" id="resume-stack-card6">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-7.png" alt="" id="resume-stack-card7">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-8.png" alt="" id="resume-stack-card8">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-9.png" alt="" id="resume-stack-card9">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-10.png" alt="" id="resume-stack-card10">
+                                    </div>
+                                    <div class="resume-stack-card">
+                                        <img src="images/cafe-11.png" alt="" id="resume-stack-card11">
+                                    </div>
+                                </div>
+                                <div class="slide-content">
+                                    <h4>les Crepes Cafe</h4>
+                                    <p>Designed a French-themed creperie website using HTML, CSS, and JavaScript. The
+                                        wireframes
+                                        for
+                                        the web pages were designed using Adobe XD.</p>
+                                    <a href="https://github.com/kirenjolly/les-crepes" target=“_blank”><i
+                                            class="fab fa-github fa-2x"></i></a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <!-- The dots/circles -->
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
                     </div>
                 </div>
 
-                <div class="mySlides fade">
-                    <div class="slide-container">
-                        <div class="stack" id="cafe-stack">
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-1.png" alt="" id="resume-stack-card1">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-2.png" alt="" id="resume-stack-card2">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-3.png" alt="" id="resume-stack-card3">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-4.png" alt="" id="resume-stack-card4">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-5.png" alt="" id="resume-stack-card5">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-6.png" alt="" id="resume-stack-card6">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-7.png" alt="" id="resume-stack-card7">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-8.png" alt="" id="resume-stack-card8">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-9.png" alt="" id="resume-stack-card9">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-10.png" alt="" id="resume-stack-card10">
-                            </div>
-                            <div class="resume-stack-card">
-                                <img src="images/cafe-11.png" alt="" id="resume-stack-card11">
-                            </div>
-                        </div>
-                        <div class="slide-content">
-                            <h4>les Crepes Cafe</h4>
-                            <p>Designed a French-themed creperie website using HTML, CSS, and JavaScript. The wireframes
-                                for
-                                the web pages were designed using Adobe XD.</p>
-                            <a href="https://github.com/kjolly2093/kjolly2093.github.io" target=“_blank”><i
-                                    class="fab fa-github fa-2x"></i></a>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Next and previous buttons -->
                 <a class="next" onclick="plusSlides(1)">
                     <i class="fa-solid fa-chevron-right fa-2xl arrow"></i>
                 </a>
             </div>
-            <br>
+        </section>
+        <section id="mobile-projects">
+            <div id="particles-js-projects-mobile">
 
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+            </div>
+            <div class="device-prototype-flex">
+                <div class="marvel-device nexus5">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="screen mobile-projects-img">
+                        <video autoplay loop muted>
+                            <source src="images/Adobe XD 2024-06-01 20-22-34.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="mobile-content">
+                    <div class="mobile-content-prototype-xd">
+                        <h4>PetPair</h4>
+                        <a href="https://xd.adobe.com/view/a18aa106-c663-4967-a44f-43311dbac5aa-f4d9/" target=“_blank”> <img
+                                src="images/adobe-xd.png" alt=""></a>
+                    </div>          
+                </div>
+            </div>
+            <div class="device-prototype-flex">
+                <div class="marvel-device nexus5">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="screen mobile-projects-img">
+                        <video autoplay loop muted>
+                            <source src="images/Adobe XD 2024-06-01 19-50-12.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="mobile-content">
+                    <div class="mobile-content-prototype-xd">
+                        <h4>FreshProduce</h4>
+                        <a href="https://xd.adobe.com/view/373f2765-34ce-4ae3-b12e-2df10bb4f3ae-626c/" target=“_blank”> <img
+                                src="images/adobe-xd.png" alt=""></a>
+                    </div>          
+                </div>
+            </div>
+            <div class="device-prototype-flex">
+                <div class="marvel-device nexus5">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="screen mobile-projects-img">
+                        <video autoplay loop muted>
+                            <source src="images/Adobe XD 2024-06-01 20-03-15.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="mobile-content">
+                    <div class="mobile-content-prototype-xd">
+                        <h4>CryptoVerse</h4>
+                        <a href="https://xd.adobe.com/view/5fb709ad-5f48-4a5b-bea8-514f70c88cdc-0ae4/" target=“_blank”> <img
+                                src="images/adobe-xd.png" alt=""></a>
+                    </div>          
+                </div>
             </div>
         </section>
         <section id="contact">

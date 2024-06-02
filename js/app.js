@@ -51,6 +51,10 @@ particlesJS.load('particles-js-projects', 'assets/particlesjs-nasa.json', functi
     console.log('callback - particles.js config loaded');
 });
 
+particlesJS.load('particles-js-projects-mobile', 'assets/particlesjs-nasa.json', function () {
+    console.log('callback - particles.js config loaded');
+});
+
 
 
 

@@ -1,0 +1,10 @@
+@media (max-width: 1023px) and (min-width: 767px){
+    nav {
+        display: flex;
+        align-items: center;
+        background-color: black;
+        /* border-bottom: 1px solid white; */
+        padding: 16px 80px 2px 40px;
+        justify-content: space-between;
+    }
+}

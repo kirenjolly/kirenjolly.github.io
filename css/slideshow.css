@@ -7,6 +7,13 @@
     align-items: center;
 }
 
+.slides-dot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Hide the images by default */
 .mySlides {
     display: none;
@@ -47,14 +54,24 @@
 }
 
 /* The dots/bullets/indicators */
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+    transform: translate(-15%, -10%);
+}
+
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    /* margin: 0 2px; */
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
+    display: block;
     transition: background-color 0.6s ease;
 }
 
