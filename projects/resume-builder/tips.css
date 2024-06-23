@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Teko:wght@300..700&display=swap');
+
+h1 {
+    font-size: 3.5em;
+    font-family: "Teko", sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "Teko", sans-serif;
+}
+
+.all-step-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-content p {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+.step-container {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.step-banner {
+    text-align: center;
+    padding: 30px;
+    margin: 50px;
+}
+
+.step-content {
+    padding: 30px 80px;
+}
+
+.step-content p {
+    font-size: 1.3em;
+    line-height: 2em;
+}
+
+.step-number {
+    display: inline-block;
+    text-align: center;
+    padding-top: 2px;
+    margin: 0 10px 0 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 1px solid #aaa; */
+    background-color: rgb(251, 236, 91);
+}
+
+.step-img {
+    padding: 10px;
+}
+.step-img img {
+
+    width: 500px;
+    height: 500px;
+}

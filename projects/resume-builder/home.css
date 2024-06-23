@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: #0277bd;
+    --dark-color: #002240;
+}
+
+/* Banner */
+.banner {
+    padding: 50px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 4em;
+}
+
+.banner p {
+    font-size: 1.4em;
+    margin: 20px 0;
+}
+
+.banner a {
+    font-size: 1.4em;
+}
+
+.banner .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+
+.banner-img {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    overflow: hidden;
+}
+
+.banner-cta {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(251, 236, 91);
+    /* border: 2px #fff solid; */
+    border-radius: 10px;
+}
+
+.banner-cta:hover {
+    transform: scale(0.95);
+}
+
+/* Templates */
+
+.template {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s ease-in;
+}
+
+.template p {
+    font-size: 2em;
+}
+
+.templates h2 {
+    margin: 60px 30px 80px 30px;
+    font-size: 3em;
+}
+
+.templates .container {
+    margin: 40px auto;
+}
+
+.templates .flex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.template:hover {
+    transform: translateY(-15px);
+}
+
+/* Backgrounds & Buttons */
+
+.bg-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-dark a {
+    color: #fff;
+}
+
+/* Tablets */
+@media(max-width:768px) {
+
+    .grid,
+    .banner .grid,
+    .footer .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+        height: auto;
+    }
+
+    .banner-text {
+        text-align: center;
+        margin: 40px;
+    }
+
+    .banner-img {
+        margin: 40px auto;
+    }
+
+    .template:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:500px) {
+    .navbar {
+        height: 110px;
+        font-size: 0.9rem;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+
+    }
+
+    .navbar ul {
+        padding: 1px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Teko:wght@300..700&display=swap');
+
+:root {
+    --primary-color: #0277bd;
+    --dark-color: #002240;
+}
+
+
+.resume-container {
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* gap: 30px; */
+    margin-top: 50px;
+}
+
+.resume-options {
+    /* flex-basis: 40%; */
+    font-size: 1.5em;
+    font-family: "Teko", sans-serif;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: #ECF9FF;
+    align-self: start;
+}
+
+.resume-options div {
+    font-weight: bold;
+    padding: 3px 25px;
+}
+
+.option:hover {
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #1c6cb3;
+    transition: all 0.01s ease-in-out;
+}
+
+.option {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#progress {
+    text-align: center;
+}
+
+#progress p {
+    background-color: rgb(251, 236, 91);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.resume-options img {
+    width: 35px;
+    height: 35px;
+}
+
+.resume-forms h1 {
+    font-size: 3.5em;
+    font-family: "Teko", sans-serif;
+}
+
+.resume-forms p {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.resume-forms {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 20px;
+    background-color: #ECF9FF;
+    border-radius: 20px;
+}
+
+.contact-info p {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.contact-form {
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+}
+
+.contact-form-tips {
+    display: flex;
+    gap: 30px;
+}
+
+.flex-row-2 {
+    display: flex;
+    gap: 20px;
+}
+
+label {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+
+input:focus {
+    border: 2px solid #1c6cb3;
+}
+
+#email,
+#phone {
+    width: 100%;
+}
+
+.form-cta {
+    padding: 15px 40px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(251, 236, 91);
+    border: none;
+    border-radius: 10px;
+    font-family: "Teko", sans-serif;
+    font-size: 1.2em;
+}
+
+.form-cta:hover {
+    transform: scale(0.95);
+}
+
+.contact-tips {
+    padding: 15px 0px 30px 5px;
+    align-self:center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow:3px 3px 3px lightblue;;
+}
+
+.contact-tips ul {
+    list-style-type: disc;
+    margin: 20px;
+    font-size: 1em;
+}
+
+.contact-tips ul li::marker {
+    color: #1c6cb3;
+}
+
+.tip-img,
+.tip-head,
+.tip-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 40px 0px; */
+}
+
+.tip-content li {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.tip-head h1 {
+    font-size: 1.5em;
+    padding: 5px 15px;
+    color: black;
+    background-color: rgb(251, 236, 91);
+    border-radius: 10px;
+}
+
+.contact-tips img {
+    width: 80px;
+    height: 80px;
+}

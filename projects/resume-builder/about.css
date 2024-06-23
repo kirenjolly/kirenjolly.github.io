@@ -1,0 +1,89 @@
+/* Banner */
+.banner {
+    height: 500px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 3em;
+}
+
+.banner p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.8em;
+    letter-spacing: 0.8px;
+    font-family: "Lato", sans-serif;
+}
+
+.banner a {
+    font-size: 1.5em;
+}
+
+.banner .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+
+.banner-img {
+    position: relative;
+    height: 300px;
+    width: 370px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+}
+
+/* contact */
+.contact {
+    height: 550px;
+}
+
+.contact h1{
+    font-size: 3.5em;
+    color: var(--dark-color);
+    margin: 50px 0;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 1.5em;
+    color: var(--dark-color);
+    margin: 15px 0;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contact .grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.location-map img {
+    border: 1px  solid none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px black;
+}
+
+.contact-options {
+    justify-self: center;
+}
+
+.contact-options p {
+    letter-spacing: 1px;
+}
+
+.contact-options .social a {
+    margin: 0 10px 0 0;
+}
+
+
