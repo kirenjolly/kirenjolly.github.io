@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+}
+
+main {
+    padding: 80px 40px 10px 40px;
+}
+
+p {
+    margin: 0;
+}
+
+.hero-banner img {
+    height: 200px;
+    width: 100%;
+    border-radius: 0 20px 0 20px;
+    object-fit: cover;
+}
+
+.restuarent-logo-search {
+    display: flex;
+}
+
+.restuarent-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.restuarent-logo h2 {
+    margin: 0;
+}
+
+.restuarent-logo img {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 64px;
+    height: 64px;
+}
+
+
+.restuarent-search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+#restuarentSearchInput {
+    padding: 8px 200px 8px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F3F3F3;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+}
+
+#restuarentSearchButton {
+    color: white;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+#restuarentSearchButton:hover {
+    background-color: red;
+    color: white;
+}
+
+/*  */
+.popup {
+    display: none;
+    position: fixed;
+    padding: 20px;
+    width: 30%;
+    left: 50%;
+    margin-left: -15%;
+    top: 40%;
+    margin-top: -10%;
+    /* height: 180px; */
+    z-index: 20;
+}
+
+#popup:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+}
+
+#popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 white, 0 1px 5px 0 white;
+    z-index: -1;
+}
+
+.popup-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popup-container img {
+    width: 80%;
+    height: 80%;
+}
+
+.popupLinks {
+    display: flex;
+    gap: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.popupLinksIcons {
+    background-color: #F3F3F3;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.popupLinksIcons:hover {
+    background-color: red;
+}
+
+.popupLinksIcons a {
+    color: black;
+}
+
+/*  */
+
+.restuarent-details-container {
+    display: flex;
+    margin-top: 20px;
+    gap: 100px;
+}
+
+.restuarent-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.rating-flex {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.delivery-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.restuarent-filter-options-container {
+    display: flex;
+    margin: 0 50px;
+    gap: 30px;
+}
+
+.restuarent-filter-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #DDDDDD;
+    margin: auto 0;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.restuarent-filter-option:hover {
+    background-color: black;
+    color: white;
+}
+
+.restuarent-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.restuarent-menu-names {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.restuarent-menu-items-container {
+    display: flex;
+    gap: 100px;
+    margin-top: 20px;
+    /* min-width: fit-content; */
+}
+
+.restuarent-menu-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px 40px;
+}
+
+.restuarent-menu-grid img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.restuarent-menu-grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.restuarent-menu-grid-item-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.restuarent-item-name {
+    display: flex;
+    align-items: center;
+}
+
+.restuarent-item-name h3 {
+    margin: 0;
+}
+
+.add-item-button {
+    display: inline-flex;
+    min-height: 32px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: black;
+    box-shadow: transparent 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.2) 0px 2px 8px;
+    color: white;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.add-item-button:hover {
+    color: black;
+    background-color: white;
+}
+
+::placeholder {
+    overflow: visible;
+}
+
+h1 {
+    margin: 0;
+}

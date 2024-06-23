@@ -1,0 +1,119 @@
+
+.about-banner {
+    position: relative;
+    height: 500px;
+    text-align: center;
+}
+
+.about-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    overflow: hidden;
+}
+
+.about-banner-text {
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    /* padding: 10px; */
+}
+
+.about-banner-text h1 {
+    font-size: 2.5em;
+    font-family: "Pacifico", cursive;
+    margin: 10px auto;
+}
+
+
+.mission h1 {
+    font-size: 3em;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    margin-top: 100px;
+    color: #132842;
+}
+
+.mission-flex {
+    display: flex;
+    margin: 10px;
+    padding: 40px;
+    gap: 60px;
+    align-items: center;
+}
+
+.mission-img {
+    flex-basis: 100%;
+    height: 380px;
+}
+
+.mission-img img {
+    border-radius: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.mission-text {
+    flex-basis: 100%;
+}
+
+.mission-text p {
+    line-height: 2em;
+    font-size: 1.1em;
+    font-family: "Nunito", sans-serif;
+}
+
+.contact h1 {
+    font-size: 3em;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    margin-top: 100px;
+    color: #132842;
+}
+
+.contact-flex {
+    display: flex;
+    margin: 10px;
+    padding: 40px;
+    gap: 60px;
+    align-items: center;
+}
+
+.contact-img {
+    flex-basis: 100%;
+    height: 350px;
+}
+
+.contact-img iframe {
+    border: none;
+    border-radius: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-text {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.contact-text p {
+    line-height: 2em;
+    font-size: 1.2em;
+    font-family: "Nunito", sans-serif;
+}
+
+.contact-text h2 {
+    font-size: 1.5em;
+    font-family: "Pacifico", cursive;
+}
+
+.contact-icons a {
+    color: black;
+    margin: 0 20px 0 0;
+}

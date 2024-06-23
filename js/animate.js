@@ -62,3 +62,37 @@ function cafeStackSwapTimeout(e) {
         cafeStack.prepend(card);
     }, 700);
 }
+
+// quick bites stack
+
+let quickBitesStack = document.querySelector("#quick-bites-stack");
+
+[...quickBitesStack.children].reverse().forEach(
+    i => quickBitesStack.append(i)
+);
+
+quickBitesStack.addEventListener("click", quickBitesStackSwap);
+
+function quickBitesStackSwap(e) {
+    let card = document.querySelector(".quick-bites-stack-card:last-child");
+    if (e.target.id != card.children[0].id) return;
+    card.style.animation = "swap 700ms forwards";
+
+    setTimeout(() => {
+        card.style.animation = "";
+        quickBitesStack.prepend(card);
+    }, 700);
+}
+
+
+setInterval(quickBitesStackSwapTimeout, 2000); 
+
+function quickBitesStackSwapTimeout(e) {
+    let card = document.querySelector(".quick-bites-stack-card:last-child");
+    card.style.animation = "swap 700ms forwards";
+    
+    setTimeout(() => {
+        card.style.animation = "";
+        quickBitesStack.prepend(card);
+    }, 700);
+}

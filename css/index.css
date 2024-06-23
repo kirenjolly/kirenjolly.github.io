@@ -6,6 +6,7 @@
 body {
     box-sizing: border-box;
 }
+
 /* Splash */
 .splash-section {
     position: fixed;
@@ -64,7 +65,7 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    z-index: -1
+    z-index: -1;
 }
 
 #particles-js-splash {
@@ -76,8 +77,19 @@ canvas {
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: 0 70%;
-    z-index: -1
+    z-index: -1;
 }
+
+/* #particles-js-splash-footer {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    background-image: url("http://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 0 70%;
+    z-index: -1;
+} */
 
 #particles-js-skills {
     /* position: absolute; */
@@ -88,7 +100,7 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    z-index: -1
+    z-index: -1;
 }
 
 #particles-js-projects {
@@ -100,7 +112,7 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    z-index: -1
+    z-index: -1;
 }
 
 #particles-js-projects-mobile {
@@ -112,7 +124,7 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    z-index: -1
+    z-index: -1;
 }
 
 body {
@@ -198,7 +210,7 @@ nav {
 /* typewriter */
 
 #typeText {
-   text-align: center;
+    text-align: center;
 }
 
 #typeText::after {
@@ -227,7 +239,7 @@ nav {
     text-decoration: none;
     color: #14e956;
     padding: 10px 20px;
-    box-shadow: 1px 1px 10px #14e956;
+    box-shadow: 0.3px 0.3px 5px #14e956;
     border-radius: 4px;
     margin: 10px;
     background-color: black;
@@ -311,7 +323,7 @@ nav {
     border-radius: 20%;
     background-color: #FEFAF6;
     padding: 10px;
-    object-fit:fill;
+    object-fit: fill;
 }
 
 .skill-grid-item img:hover {
@@ -326,7 +338,7 @@ nav {
 #experience h1 {
     text-align: center;
     font-size: 4em;
-    margin:  170px auto;
+    margin: 170px auto;
 }
 
 
@@ -362,7 +374,7 @@ nav {
     gap: 10px;
     border-left-style: solid;
     border-left-color: #0F0F0F;
-    padding:10px;
+    padding: 10px;
     /* margin: 4px 8px; */
     text-decoration: none;
     color: white;
@@ -438,6 +450,39 @@ nav {
     margin: 170px 60px 130px 70px;
 }
 
+.projects-buttons-container {
+    display: flex;
+    margin: 30px 0 20px 0;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.projects-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0.3px 0.3px 5px #14e956;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.projects-buttons a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "Black Ops One", system-ui;
+}
+
+.projects-buttons:hover {
+    background-color: #14e956;
+    color: black;
+}
+
+.projects-buttons:hover>a {
+    color: black;
+}
+
 .slide-container {
     display: flex;
     flex-direction: column;
@@ -485,12 +530,7 @@ nav {
 .mobile-projects-img video {
     height: 100%;
     width: 100%;
-    object-fit:fill;
-}
-
-.mobile-content {
-    text-align: center;
-    width: 80%;
+    object-fit: fill;
 }
 
 .mobile-content a img {
@@ -499,22 +539,38 @@ nav {
     transform: translateY(12%);
 }
 
+.mobile-content-prototype-xd img {
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-content-prototype-xd a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: "Black Ops One", system-ui;
+}
 
 .mobile-content-prototype-xd {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;  
+    gap: 10px;
     border: 1px solid #14e956;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px #14e956;
+    box-shadow: 0.3px 0.3px 5px #14e956;
+    padding: 8px 20px;
+    background-color: black;
 }
 
 .mobile-content-prototype-xd:hover {
     background-color: #14e956;
-    color: black;
 }
 
+.mobile-content-prototype-xd:hover > a{
+    color: black;
+}
 
 .mobile-content {
     background-color: black;
@@ -523,6 +579,8 @@ nav {
     text-align: center;
     line-height: 1.5em;
     letter-spacing: 0.5px;
+    text-align: center;
+    width: 80%;
 }
 
 .mobile-content h4 {
@@ -535,6 +593,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
 /* Contact */

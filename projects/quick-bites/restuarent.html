@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restuarents</title>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/restuarent.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <!-- Item Added Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-container">
+            <h1>Item Added to Cart</h1>
+            <img src="images/subway-item-1.avif" alt="">
+            <h3>Italian B.M.T.</h3>
+            <div class="popupLinks">
+                <div class="popupLinksIcons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="cart.html">Go to Cart</a>
+                </div>
+                <div class="popupLinksIcons">
+                    <i class="fa-solid fa-xmark"></i>
+                    <a href="#" id="closeLink">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <header>
+        <nav>
+            <div id="sidebar">
+                <a id="closebtn"><i class="fa-solid fa-circle-xmark fa-2xl"></i></a>
+                <div class="sidenav-container">
+                    <div class="account-nav-container">
+                        <img src="images/profile-icon.png" alt="">
+                        <div class="flex-2-column">
+                            <p class="bold-txt-md">John Doe</p>
+                            <a href="account.html">Edit Account</a>
+                        </div>
+                    </div>
+                    <div class="sidenav-links">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-landmark"></i>
+                            <a href="index.html">Home</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <a href="order.html">Order History</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a href="cart.html">Cart</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="account.html">Account</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <a href="about.html">About Us</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="signOutButton">Sign Out</button>
+                    </div>
+                    <div class="nav-logo-store-flex">
+                        <div class="nav-logo-container">
+                            <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick
+                                Bites</a>
+                        </div>
+                        <div class="nav-store-container">
+                            <div class="nav-store-icons">
+                                <i class="fa-brands fa-apple"></i>
+                                <p>Apple</p>
+                            </div>
+                            <div class="nav-store-icons">
+                                <i class="fa-brands fa-android"></i>
+                                <p>Android</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-container">
+                <i id="openSidebarBtn" class="fa-solid fa-bars fa-xl"></i>
+                <div class="menu-nav-item">
+                    <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick Bites</a>
+                </div>
+                <div class="location-menu-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="index.html">108 University Ave</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="search-nav-item">
+                    <input type="text" placeholder="&#xF002; Type the bite you are want!"
+                        style="font-family:Arial, FontAwesome" id="headerSearchInput" />
+                    <a href="index.html" id="searchButton">Search</a>
+                </div>
+                <div class="cart-nav-item">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                    <i class="fa-solid fa-heart fa-lg" style="color: red;"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-banner">
+            <img src="images/subway-banner.avif" alt="">
+        </div>
+        <div class="restuarent-logo-search">
+            <div class="restuarent-logo">
+                <img src="images/Subway_Canada_logo.avif" alt="">
+                <h1>Subway</h1>
+                <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
+            </div>
+            <div class="restuarent-search">
+                <input type="text" placeholder="&#xF002; Search in the restuarent!"
+                    style="font-family:Arial, FontAwesome" id="restuarentSearchInput" />
+                <a href="index.html" id="restuarentSearchButton">Search</a>
+            </div>
+        </div>
+        <div class="restuarent-details-container">
+            <div class="restuarent-info">
+                <h2>Store Info</h2>
+                <div class="rating-flex">
+                    <p>4.3</p>
+                    <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                    <p>(500+) ratings</p>
+                </div>
+                <div class="delivery-details">
+                    <p>10-20 Mins</p>
+                    <p>$2.99 Delivery Fee</p>
+                </div>
+            </div>
+            <div class="restuarent-filter-options-container">
+                <div class="restuarent-filter-option">
+                    <i class="fa-solid fa-tag"></i>
+                    <p>Offers</p>
+                </div>
+                <div class="restuarent-filter-option">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Rating</p>
+                </div>
+                <div class="restuarent-filter-option">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p>Price</p>
+                </div>
+                <div class="restuarent-filter-option">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Time</p>
+                </div>
+                <div class="restuarent-filter-option">
+                    <i class="fa-solid fa-tag"></i>
+                    <p>Sort</p>
+                </div>
+            </div>
+        </div>
+        <div class="restuarent-menu-items-container">
+            <div class="restuarent-menu">
+                <h2>Menu</h2>
+                <div class="restuarent-menu-names">
+                    <p>Featured Items</p>
+                    <p>Offers</p>
+                    <p>Combos</p>
+                    <p>Drinks</p>
+                </div>
+            </div>
+            <div class="restuarent-menu-grid">
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-1.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Italian B.M.T.</h3>
+                            <button class="add-item-button">+</button>
+                        </div>
+                        <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-2.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Sweet Onion Chicken</h3>
+                            <button class="add-item-button">+</button>
+                        </div>
+                        <p>
+                            Sweet and savoury, for those on the go! Our Sweet Onion Chicken Teriyaki Signature Rice Wrap
+                        </p>
+                        <p>$6.79</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-3.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Tuna (280 Cals)</h3>
+                            <button class="add-item-button">+</button>
+                        </div>
+                        <p>Everything but the bread! Turn any one of your favourite sandwiches into a salad.
+                        </p>
+                        <p>$8.99</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-4.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Shawarma Chicken</h3>
+                            <button class="add-item-button">+</button>
+                        </div>
+                        <p>That’s a Wrap with the new Shawarma Chicken Rice Wrap, a symphony of Globally Inspired
+                            flavours tucked into a tortilla wrap</p>
+                        <p>$7.49</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-5.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Pizza Sub Melt </h3>
+                            <button class="add-item-button">+</button>
+                        </div>
+                        <p>GTopped with marinara sauce, cheese and pepperoni. Try it toasted for even more pizza taste!
+                        </p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-7.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Steak & Cheese (210 Cals)</h3>
+                            <button class="add-item-button">+</button>
+                        </div>
+                        <p>Add crunch to your meal with lettuce, red onions, tomatoes, cucumbers and much more!</p>
+                        <p>$10.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-container">
+                <div class="footer-logo">
+                    <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick Bites</a>
+                </div>
+            </div>
+            <div class="quick-links-container">
+                <div class="quick-link">
+                    <a href="index.html">Home</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="order.html">Order History</a>
+                    <a href="account.html">Account</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="quick-link">
+                    <a href="index.html">Help</a>
+                    <a href="index.html">Promotions</a>
+                    <a href="index.html">Privacy Policy</a>
+                    <a href="index.html">Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="store-icons-container">
+                <div class="store-icons">
+                    <img src="images/app-store.png" alt="">
+                    <p>Apple Store</p>
+                </div>
+                <div class="store-icons">
+                    <img src="images/game.png" alt="">
+                    <p>Google Play</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="https://kit.fontawesome.com/cc4aa76a9b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

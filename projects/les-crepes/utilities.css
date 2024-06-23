@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap');
+
+
+:root {
+    --primary-color: #132842;
+    --secondary-color: #1c6cb3;
+}
+
+body {
+    margin: 0;
+}
+
+/* Header */
+
+a {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 15px auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+}
+
+.nav-links li a {
+    margin: 10px;
+    padding: 0 30px;
+    color: black;
+    font-size: 1.1em;
+    font-family: "Pacifico", cursive;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+   
+}
+
+
+
+.logo-img {
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.logo-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Footer */
+
+.footer-container {
+    /* 132842 */
+    background-color: #1c6cb3;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.footer-container h4 {
+    font-size: 1.1em;
+    font-family: "Pacifico", cursive;
+}
+
+.logo-img-footer {
+    height: 150px;
+    width: 150px;
+}
+
+.logo-img-footer img {
+    width: 100%;
+    height: 100%;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin: 18px auto;
+}
+
+.quick-links a {
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.icons a {
+    color: white;
+    margin: 0 12px 0 0;
+}

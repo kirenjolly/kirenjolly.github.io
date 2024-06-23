@@ -43,6 +43,10 @@ particlesJS.load('particles-js-splash', 'assets/particlesjs-config.json', functi
     console.log('callback - particles.js config loaded');
 });
 
+// particlesJS.load('particles-js-splash-footer', 'assets/particlesjs-config.json', function () {
+//     console.log('callback - particles.js config loaded');
+// });
+
 particlesJS.load('particles-js-skills', 'assets/particles-1.json', function () {
     console.log('callback - particles.js config loaded');
 });
