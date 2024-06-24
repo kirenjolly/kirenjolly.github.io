@@ -755,6 +755,6 @@ footer p {
     color: gray;
 }
 
-.fa-lg {
-    line-height: 0;
-}
+i.fa-lg {
+    line-height: inherit;
+  }
