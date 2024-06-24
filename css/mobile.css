@@ -203,4 +203,14 @@
     textarea {
         padding: 4px 130px 100px 2px;
     }
+
+    /* footer */
+    .footer-social-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-content-header{
+        font-size: 1rem;
+    }
 }

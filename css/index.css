@@ -568,7 +568,7 @@ nav {
     background-color: #14e956;
 }
 
-.mobile-content-prototype-xd:hover > a{
+.mobile-content-prototype-xd:hover>a {
     color: black;
 }
 
@@ -689,9 +689,10 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 60px 20px 20px 20px;
     background-color: black;
+    border-top: 0.1px inset white;
 }
 
 footer p {
@@ -709,4 +710,51 @@ footer p {
 
 .submit-feedback {
     display: none;
+}
+
+/* footer content */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content-header {
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-family: "Black Ops One", system-ui;
+}
+
+.footer-social-container {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-social-item  {
+    display: flex;
+    gap: 6px;         
+}
+
+.footer-social-item i {
+    color: #14e956;
+}
+
+.footer-social-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social-item a:hover {
+    color: #14e956;
+}
+
+.footer-copyright {
+    color: gray;
+}
+
+.fa-lg {
+    line-height: 0;
 }

@@ -139,3 +139,5 @@ $("#contact-form").on("submit", function (event) {
     $(".submit-feedback").css("display", "block");
     $("#contact-form").trigger("reset");
 });
+
+// mail to, collect data from submit form for the email bodyl
