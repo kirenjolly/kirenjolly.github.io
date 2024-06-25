@@ -149,6 +149,7 @@
         width: 75%;
         padding: 20px;
         line-height: 1.4rem;
+        gap: 40px;
     }
 
     /* Projects */
@@ -190,27 +191,13 @@
         gap: 120px;
     }
 
-    .contact-form-flex {
-        width: 80%;
-    }
-
-
-    input[type='text'],
-    input[type='email'] {
-        padding: 10px 120px 10px 4px;
-    }
-
-    textarea {
-        padding: 4px 130px 100px 2px;
-    }
-
     /* footer */
     .footer-social-container {
         flex-direction: column;
         gap: 20px;
     }
 
-    .footer-content-header{
+    .footer-content-header {
         font-size: 1rem;
     }
 }

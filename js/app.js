@@ -33,9 +33,11 @@ function type(word, letter) {
     }
 }
 
+// assets/particlesjs-intra.json
+// assets/particles-1.json
 
 // Particles config
-particlesJS.load('particles-js', 'assets/particlesjs-intra.json', function () {
+particlesJS.load('particles-js', 'assets/particles-1.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
@@ -47,7 +49,7 @@ particlesJS.load('particles-js-splash', 'assets/particlesjs-config.json', functi
 //     console.log('callback - particles.js config loaded');
 // });
 
-particlesJS.load('particles-js-skills', 'assets/particles-1.json', function () {
+particlesJS.load('particles-js-skills', 'assets/particlesjs-intra.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
@@ -127,17 +129,4 @@ document.onclick = function (e) {
     if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
         closeMenu();
     }
-}
-
-//Contact form
-$("#contact-form").on("submit", function (event) {
-    event.preventDefault();
-    let name = event.target.elements.item(0).value;
-    let email = event.target.elements.item(1).value;
-    let message = event.target.elements.item(2).value
-    console.log(message);
-    $(".submit-feedback").css("display", "block");
-    $("#contact-form").trigger("reset");
-});
-
-// mail to, collect data from submit form for the email bodyl
+}           

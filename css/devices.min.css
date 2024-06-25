@@ -1293,7 +1293,8 @@
     top: 70px;
     height: 45px;
     background: inherit;
-    border-radius: 0px 2px 2px 0px
+    border-radius: 0px 2px 2px 0px;
+    background-color: red;
 }
 
 .marvel-device.nexus5 .camera {
@@ -1309,7 +1310,7 @@
 }
 
 .marvel-device.nexus5 .camera:before {
-    background: #14e956;
+    background:#e5ce4c;
     width: 6px;
     height: 6px;
     content: '';
